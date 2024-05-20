@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentify - Seller Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div id="seller-dashboard">
+        <h2>Seller Dashboard</h2>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-4">
+                <div id="toggle-form">
+                    <button onclick="toggleForm()" class="btn btn-primary btn-block">Enter New Property</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="properties-posted">
+            <h3>Your Posted Properties</h3>
+            <div class="row justify-content-center"> <!-- Centering the property listings -->
+                <!-- First property listing -->
+                <div class="col-md-4">
+                    <div class="property-item square-carousel">
+                        <div id="carouselExampleInterval1" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="10000">
+                                    <img src="img/villa1.jpg" class="d-block w-100" alt="Villa 1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h4> Villa 1</h4>
+                            <p>Location: <span>123 Main St, Cityville</span></p>
+                            <p>Price: <span>$500,000</span></p>
+                            <p>Area: <span>4000 sqft</span></p>
+                            <p>Bedrooms: <span>5</span></p>
+                            <p>Bathrooms: <span>3</span></p>
+                        </div>
+                        <div class="buttons">
+                            <button onclick="editProperty('villa1')" id="edit">Edit</button>
+                            <button onclick="deleteProperty('villa1')" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second property listing -->
+                <div class="col-md-4">
+                    <div class="property-item square-carousel">
+                        <div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="10000">
+                                    <img src="img/villa2.jpg" class="d-block w-100" alt="Villa 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h4> Villa 2</h4>
+                            <p>Location: <span>456 Elm St, Townsville</span></p>
+                            <p>Price: <span>$600,000</span></p>
+                            <p>Area: <span>4500 sqft</span></p>
+                            <p>Bedrooms: <span>4</span></p>
+                            <p>Bathrooms: <span>2</span></p>
+                        </div>
+                        <div class="buttons">
+                            <button onclick="editProperty('villa2')" id="edit">Edit</button>
+                            <button onclick="deleteProperty('villa2')" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third property listing -->
+                <div class="col-md-4">
+                    <div class="property-item square-carousel">
+                        <div id="carouselExampleInterval3" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="10000">
+                                    <img src="img/villa3.jpg" class="d-block w-100" alt="Villa 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h4>Villa 3</h4>
+                            <p>Location: <span>789 Oak St, Villagetown</span></p>
+                            <p>Price: <span>$750,000</span></p>
+                            <p>Area: <span>5000 sqft</span></p>
+                            <p>Bedrooms: <span>6</span></p>
+                            <p>Bathrooms: <span>4</span></p>
+                        </div>
+                        <div class="buttons">
+                            <button onclick="editProperty('villa3')" id="edit">Edit</button>
+                            <button onclick="deleteProperty('villa3')" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+        <div id="post-property-form" style="display:none">
+            <h2>Post Your Property</h2>
+            <form id="property-form">
+                <input type="text" name="title" placeholder="Property Title" required><br>
+                <input type="text" name="location" placeholder="Location" required><br>
+                <input type="number" name="price" placeholder="Price" required><br>
+                <input type="number" name="area" placeholder="Area (in sqft)" required><br>
+                <input type="number" name="bedrooms" placeholder="Bedrooms" required><br>
+                <input type="number" name="bathrooms" placeholder="Bathrooms" required><br>
+                <input type="file" name="images" multiple accept="image/*"><br>
+                <button type="submit">Post Property</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

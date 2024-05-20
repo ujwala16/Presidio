@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #5c71ed;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f57813;
+}
+h2 {
+    text-align: center;
+    color:#007bff
+}
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    width: calc(100% - 10px); /* Adjust for padding */
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form button {
+    background: #0374f5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+form button:hover {
+    background: #0ec4ed;
+}
+
+.asterisk {
+    color: red;
+}
+
+.caution {
+    font-size: 0.9em;
+    color: #efc03d;
+    margin-top: 5px;
+}
+.square-carousel .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.square-carousel .carousel-inner {
+    height: auto;
+}
+
+.square-carousel .carousel-control-prev,
+.square-carousel .carousel-control-next {
+    height: 100%;
+}
+
+.square-carousel .carousel-control-prev-icon,
+.square-carousel .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+}
+.square-carousel .carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    width: 300px;
+}
+
+#seller-dashboard {
+    padding: 20px;
+}
+
+#properties-posted {
+    margin-bottom: 20px;
+}
+
+.property-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.property-details {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+#edit{
+        background-color: #5ed0e9;
+        border-radius: 5px;
+}
+#delete{
+    background-color: rgb(247, 79, 79);
+    border-radius: 5px;
+}
+.navbar {
+    margin-bottom: 20px; 
+}
+
+#seller-dashboard {
+    position: relative;
+}
+
+#toggle-form {
+    position: absolute; 
+    top: -30px; 
+    right: -300px; 
+    margin-top: 20px; 
+}
+
+#toggle-form button {
+    width: 200px; 
+}
+
+#post-property-form {
+    margin-top: 20px; 
+}
+
+#post-property-form form {
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+#toggle-form button:hover {
+    background-color: #0056b3; 
+}
+
+
+#search-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px;
+}
+
+#search-filters input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#search-filters button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-filters button:hover {
+    background-color: #0056b3;
+}
